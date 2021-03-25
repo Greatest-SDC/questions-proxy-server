@@ -5,6 +5,10 @@ const port = process.env.PORT || 8081;
 
 app.use(cors());
 
+app.get('/' (req, res) => {
+  res.send('On the proxy server');
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}!`)
 })
